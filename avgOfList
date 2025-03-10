@@ -1,0 +1,16 @@
+# average of 4 random numbers changing
+import random
+from time import sleep
+myList = [0] * 4
+counter = 0
+
+while 1:
+    
+    myList[counter] = random.randint(1, 9)
+    avg = sum(myList)/len(myList)
+    print(num,myList,avg)
+    sleep(1)
+    counter = counter + 1
+    if counter == 4:
+        counter = 0
+
